@@ -1,0 +1,23 @@
+* { margin:0;padding:0; }
+body { font-family:Arial,sans-serif;font-size:14px;margin:10px;}
+button { padding:2px;}
+
+.imagelist { list-style:none;}
+.imagelist li { margin-bottom:10px;position:relative;overflow:hidden;}
+.imagelist img { width:150px;float:left; }
+.imagelist input[type=text] { display:block;width:350px;margin:5px 0;}
+
+.imagelist input[type=file] { position:absolute;top:0;left:0;}
+.imagelist input[type=file]::-webkit-file-upload-button, .remove-btn {
+	position:absolute;left:25px;top:5px;font-size:14px;width:100px;padding:2px;
+}
+.remove-btn { top:auto;bottom:5px;}
+.imagelist fieldset {float:left; padding-left:10px;border:none; }
+
+
+.imagelist em {
+	background:#eee;line-height:150px;width:150px;display:block;
+	text-align:center;float:left;font-style:normal;
+}
+
+input[type=checkbox] { vertical-align:-8%;margin-right:2px;}

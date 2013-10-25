@@ -1,0 +1,70 @@
+/* == Nivo Slider == */
+body {
+	font-size: 13px;
+}
+h2 { color: #a71930; border-bottom: 0px solid #a71930; background-color: #efefef; padding: 12px 10px; }
+h3 {font-size: 15px;}	
+.eventscol h3 { font-size:15px; }
+
+.nivoSlider a.nivo-imageLink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 6;
+    display: none;
+    background: white;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.nivo-caption {
+    position: absolute; left:0;right:0;bottom:0;z-index: 8;
+    background:#222;
+    background: rgba(0,0,0,.8);color: #fff; padding: 5px 10px;
+    overflow: hidden; display: none;
+}
+.nivoSlider {
+	margin-top:20px;
+	position:relative;
+	width:100%;
+	/*height:349px;*/
+	height:auto;
+	overflow:hidden;
+}
+.nivoSlider img { position:absolute; top:0px; left:0px; }
+.nivo-main-image { display: block !important; position: relative !important; width: 100% !important; }
+.nivo-slice { display:block; position:absolute; z-index:5; height:100%; top:0; }
+.nivo-box { display:block; position:absolute; z-index:5; overflow:hidden; }
+.nivo-box img { display:block; }
+
+/* == Modifications to Bootstrap == */
+
+article, .warning-p { margin:2em 0;position:relative; }
+	article > a { display:block; color: #585858;}
+	article a:hover { text-decoration: none; }
+		/*article img { width:100px;display:block;position:absolute;left:0px;top:0; }*/
+		article img {width: 100px; float: left;}
+		article img+h3, article img+h3+p { padding-left:105px; }
+		article h3 { margin:0;line-height:1.2;font-size: 13px;}
+		article p { overflow:hidden;}
+		article a p, article a time { color:#333;}
+		article a:hover h3 { text-decoration: underline; }
+		article a:hover img { border-color:#2a6496; }
+hr { border-top-width:5px; }
+
+.img-thumbnail {
+	-webkit-transition: border-color .2s ease-in-out;
+	transition: border-color .2s ease-in-out;
+}
+.news-col { padding-top:1px; padding-left: 0;}
+	.newstime { position:absolute;top:22px;right:20px;line-height:35px;font-size:.83em;}
+.hourscol {padding-right: 0;}
+.grid {
+	margin: 10px 0;
+	/*display: inline-block;*/
+	/*margin-right: 10px;*/
+}
